@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator !</title>
+
+    <link href="link%20out/fontawesome.all.css">
+    <link href="link%20out/bootstrap.min.css" rel="stylesheet">
+    <link href="include/css/calculator.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container" >
+    <h1>calculator</h1>
+        <div class="col-md-6 justify-content-center">
+            <table class="table">
+                  <tr>
+                    <td colspan="3">
+                        <input type="text" disabled="disabled" id=textarea>
+                    </td>
+                    <td>
+                        <input type="button" value="Clear" class="btn btn-danger" onclick=clr()>
+                    </td>
+                </tr>
+                 <tr>
+                    <td><input type="button" value="1" class="btn btn-outline-secondary" onclick=display('1')></td>
+                    <td><input type="button" value="2" class="btn btn-outline-secondary" onclick=display('2')></td>
+                    <td><input type="button" value="3" class="btn btn-outline-secondary" onclick=display('3')></td>
+                    <td><input type="button" value="+" class="btn btn-secondary" onclick=display('+')></td>
+                 </tr>
+                <tr>
+                    <td><input type="button" value="4" class="btn btn-outline-secondary" onclick=display('4')></td>
+                    <td><input type="button" value="5" class="btn btn-outline-secondary" onclick=display('5')></td>
+                    <td><input type="button" value="6" class="btn btn-outline-secondary" onclick=display('6')></td>
+                    <td><input type="button" value="-" class="btn btn-secondary" onclick=display('-')></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" class="btn btn-outline-secondary" onclick=display('7')></td>
+                    <td><input type="button" value="8" class="btn btn-outline-secondary" onclick=display('8')></td>
+                    <td><input type="button" value="9" class="btn btn-outline-secondary" onclick=display('9')></td>
+                    <td><input type="button" value="/" class="btn btn-secondary" onclick=display('/')></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" class="btn btn-outline-primary" onclick=display('0')></td>
+                    <td><input type="button" value="." class="btn btn-outline-primary" onclick=display('.')></td>
+                    <td><input type="button" value="=" class="btn btn-primary" onclick=calculate()></td>
+                    <td><input type="button" value="*" class="btn btn-secondary"onclick=display('*')></td>
+                </tr>
+            </table>
+        </div>
+
+</div>
+
+<script src="../link%20out/fontawesome.all.js"></script>
+<script src="../link%20out/jquery.min.js"></script>
+<script src="../link%20out/bootstrap.min.css"></script>
+<script src="include/js/calculator.js"></script>
+</body>
+</html>

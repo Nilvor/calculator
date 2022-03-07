@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: x_factor;
+    padding: 150px 35%;
+    background-color: #1c3049;
+    color: white;
+}
+input[type=button]{
+    width: 100%;
+}
+
